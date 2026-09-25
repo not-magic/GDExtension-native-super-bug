@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://dn33hukd5w3ng"]
+
+[ext_resource type="Script" uid="uid://b0pelfo5ydsur" path="res://child_example.gd" id="1_g1k0v"]
+
+[node name="ChildExample" type="GDExample" unique_id=1189675111]
+position = Vector2(5.6822233, 6.713753)
+script = ExtResource("1_g1k0v")

@@ -8,6 +8,7 @@ void GDExample::_bind_methods() {
 	ClassDB::bind_method(D_METHOD("set_amplitude", "p_amplitude"), &GDExample::set_amplitude);
 	ClassDB::bind_method(D_METHOD("get_speed"), &GDExample::get_speed);
 	ClassDB::bind_method(D_METHOD("set_speed", "p_speed"), &GDExample::set_speed);
+	ClassDB::bind_method(D_METHOD("_init", "amplitude", "speed"), &GDExample::_init);
 
 	ADD_PROPERTY(PropertyInfo(Variant::FLOAT, "amplitude"), "set_amplitude", "get_amplitude");
 	ADD_PROPERTY(PropertyInfo(Variant::FLOAT, "speed", PROPERTY_HINT_RANGE, "0,20,0.01"), "set_speed", "get_speed");
@@ -23,6 +24,14 @@ GDExample::GDExample() {
 }
 
 GDExample::~GDExample() {
+}
+
+void GDExample::_init(const double p_amplitude, const double p_speed) {
+
+	print_line("GDExample::_init called!");
+
+	set_amplitude(p_amplitude);
+	set_speed(p_speed);
 }
 
 void GDExample::_process(double delta) {

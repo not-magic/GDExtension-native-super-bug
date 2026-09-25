@@ -1,9 +1,8 @@
 [gd_scene format=3 uid="uid://c0j58gqjq8u8h"]
 
-[ext_resource type="Texture2D" uid="uid://dewig036g2vro" path="res://icon.svg" id="1"]
+[ext_resource type="PackedScene" uid="uid://dn33hukd5w3ng" path="res://ChildExample.tscn" id="1_ig7tw"]
 
 [node name="Main" type="Node2D" unique_id=547416149]
 
-[node name="GDExample" type="GDExample" parent="." unique_id=410932432]
-position = Vector2(3.5901775, 1.3309304)
-texture = ExtResource("1")
+[node name="ChildExample" parent="." unique_id=1189675111 instance=ExtResource("1_ig7tw")]
+position = Vector2(0.38266948, 19.830196)

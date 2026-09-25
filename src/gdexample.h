@@ -20,6 +20,8 @@ public:
 	GDExample();
 	~GDExample();
 
+	void _init(const double p_amplitude, const double p_speed);
+	
 	void _process(double delta) override;
 	void set_amplitude(const double p_amplitude);
 	double get_amplitude() const;
